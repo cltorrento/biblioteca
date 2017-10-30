@@ -28,15 +28,17 @@ public class MainController {
 
 	}
 
-	//Insert a Book
+	// inserire un singolo libro
 	@RequestMapping(method = RequestMethod.POST, value = "/insertlibro", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Boolean> insertLibro(@RequestBody Libro libro) {
+		logger.debug("Ricevuto l'oggetto: "+libro.toString());
+
 		boolean result = LibriService.upsertLibro(libro);
 		if (result) {
 			return new ResponseEntity<Boolean>(result, HttpStatus.OK);
 		} else {
 			return new ResponseEntity<Boolean>(result, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-
 	}
+
 }

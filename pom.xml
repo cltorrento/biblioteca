@@ -9,13 +9,13 @@
 	<packaging>jar</packaging>
 
 	<name>biblioteca</name>
-	<description>Gestione Biblioteca con CouchBase</description>
+	<description>Gestione biblioteca con Couchbase</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.7.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -41,6 +41,7 @@
 	</repositories>
 	<dependencies>
 		<dependency>
+			<!-- https://mvnrepository.com/artifact/com.couchbase.client/java-client -->
 			<groupId>com.couchbase.client</groupId>
 			<artifactId>java-client</artifactId>
 			<version>${java-client.version}</version>
@@ -60,12 +61,12 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
-    		<groupId>com.google.code.gson</groupId>
-    		<artifactId>gson</artifactId>
-    		<version>${google.gson.version}</version>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${google.gson.version}</version>
 		</dependency>
-		
 	</dependencies>
 
 	<build>

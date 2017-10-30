@@ -1,6 +1,0 @@
-/home/tuxito/eclipse-workspace/biblioteca/src/main/java/it/f2informatica/couchbase/biblioteca/BibliotecaApplication.java
-/home/tuxito/eclipse-workspace/biblioteca/src/main/java/it/f2informatica/couchbase/biblioteca/controller/MainController.java
-/home/tuxito/eclipse-workspace/biblioteca/src/main/java/it/f2informatica/couchbase/biblioteca/service/LibriService.java
-/home/tuxito/eclipse-workspace/biblioteca/src/main/java/it/f2informatica/couchbase/biblioteca/service/TestService.java
-/home/tuxito/eclipse-workspace/biblioteca/src/main/java/it/f2informatica/couchbase/biblioteca/database/DBManager.java
-/home/tuxito/eclipse-workspace/biblioteca/src/main/java/it/f2informatica/couchbase/biblioteca/domain/Libro.java
