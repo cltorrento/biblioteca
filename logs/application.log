@@ -275,4 +275,51 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 ""2017-10-27 17:07:30 [restartedMain] DEBUG i.f.c.b.BibliotecaApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
 ""2017-10-27 17:07:30 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - No active profile set, falling back to default profiles: default
 ""2017-10-27 17:07:31 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Started BibliotecaApplication in 0.907 seconds (JVM running for 653.407)
+""2017-10-31 11:31:19 [main] INFO  i.f.c.b.BibliotecaApplicationTests - Starting BibliotecaApplicationTests on debian with PID 2354 (started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-10-31 11:31:19 [main] DEBUG i.f.c.b.BibliotecaApplicationTests - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-10-31 11:31:19 [main] INFO  i.f.c.b.BibliotecaApplicationTests - No active profile set, falling back to default profiles: default
+""2017-10-31 11:31:23 [main] INFO  i.f.c.b.BibliotecaApplicationTests - Started BibliotecaApplicationTests in 4.519 seconds (JVM running for 6.121)
+""2017-10-31 11:31:27 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Starting BibliotecaApplication on debian with PID 2371 (/home/tuxito/eclipse-workspace/biblioteca/target/classes started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-10-31 11:31:27 [restartedMain] DEBUG i.f.c.b.BibliotecaApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-10-31 11:31:27 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - No active profile set, falling back to default profiles: default
+""2017-10-31 11:31:32 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Started BibliotecaApplication in 5.662 seconds (JVM running for 6.271)
+""2017-10-31 11:39:08 [main] INFO  i.f.c.b.BibliotecaApplicationTests - Starting BibliotecaApplicationTests on debian with PID 2938 (started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-10-31 11:39:08 [main] DEBUG i.f.c.b.BibliotecaApplicationTests - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-10-31 11:39:08 [main] INFO  i.f.c.b.BibliotecaApplicationTests - No active profile set, falling back to default profiles: default
+""2017-10-31 11:39:17 [main] INFO  i.f.c.b.BibliotecaApplicationTests - Started BibliotecaApplicationTests in 10.66 seconds (JVM running for 14.049)
+""2017-10-31 11:39:23 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Starting BibliotecaApplication on debian with PID 2989 (/home/tuxito/eclipse-workspace/biblioteca/target/classes started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-10-31 11:39:23 [restartedMain] DEBUG i.f.c.b.BibliotecaApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-10-31 11:39:23 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - No active profile set, falling back to default profiles: default
+""2017-10-31 11:39:29 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Started BibliotecaApplication in 6.315 seconds (JVM running for 7.518)
+""2017-10-31 11:39:49 [http-nio-9000-exec-1] DEBUG i.f.c.b.controller.MainController - Nel metodo testCB()
+""2017-10-31 11:39:49 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.service.TestService - Cerco di creare la connessione al bucket
+""2017-10-31 11:39:49 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.database.DBManager - Configurazione: host 172.16.10.185, bucket test, user corsojava, password corsojava
+""2017-10-31 11:39:49 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.database.DBManager - Creo un riferimento al cluster
+""2017-10-31 11:39:49 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.database.DBManager - Apro il bucket test
+""2017-10-31 11:39:51 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.service.TestService - OK
+""2017-10-31 11:40:48 [http-nio-9000-exec-3] DEBUG i.f.c.b.controller.MainController - Nel metodo testCB()
+""2017-10-31 11:40:48 [http-nio-9000-exec-3] DEBUG i.f.c.biblioteca.service.TestService - Cerco di creare la connessione al bucket
+""2017-10-31 11:40:48 [http-nio-9000-exec-3] DEBUG i.f.c.biblioteca.service.TestService - OK
+""2017-10-31 11:41:12 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Starting BibliotecaApplication on debian with PID 2989 (/home/tuxito/eclipse-workspace/biblioteca/target/classes started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-10-31 11:41:12 [restartedMain] DEBUG i.f.c.b.BibliotecaApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-10-31 11:41:12 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - No active profile set, falling back to default profiles: default
+""2017-10-31 11:41:14 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Started BibliotecaApplication in 1.384 seconds (JVM running for 112.409)
+""2017-10-31 11:41:14 [http-nio-9000-exec-1] DEBUG i.f.c.b.controller.MainController - Nel metodo testCB()
+""2017-10-31 11:41:14 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.service.TestService - Cerco di creare la connessione al bucket
+""2017-10-31 11:41:14 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.database.DBManager - Configurazione: host http://172.16.10.185, bucket test, user corsojava, password corsojava
+""2017-10-31 11:41:14 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.database.DBManager - Creo un riferimento al cluster
+""2017-10-31 11:41:14 [http-nio-9000-exec-1] WARN  c.c.client.core.env.CoreEnvironment - More than 1 Couchbase Environments found (2), this can have severe impact on performance and stability. Reuse environments!
+""2017-10-31 11:41:14 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.database.DBManager - Apro il bucket test
+""2017-10-31 11:41:15 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.service.TestService - OK
+""2017-10-31 11:41:32 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Starting BibliotecaApplication on debian with PID 2989 (/home/tuxito/eclipse-workspace/biblioteca/target/classes started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-10-31 11:41:32 [restartedMain] DEBUG i.f.c.b.BibliotecaApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-10-31 11:41:32 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - No active profile set, falling back to default profiles: default
+""2017-10-31 11:41:33 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Started BibliotecaApplication in 1.298 seconds (JVM running for 132.121)
+""2017-10-31 11:41:36 [http-nio-9000-exec-1] DEBUG i.f.c.b.controller.MainController - Nel metodo testCB()
+""2017-10-31 11:41:36 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.service.TestService - Cerco di creare la connessione al bucket
+""2017-10-31 11:41:36 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.database.DBManager - Configurazione: host http://172.16.10.185:8091, bucket test, user corsojava, password corsojava
+""2017-10-31 11:41:36 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.database.DBManager - Creo un riferimento al cluster
+""2017-10-31 11:41:36 [http-nio-9000-exec-1] WARN  c.c.client.core.env.CoreEnvironment - More than 1 Couchbase Environments found (3), this can have severe impact on performance and stability. Reuse environments!
+""2017-10-31 11:41:36 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.database.DBManager - Apro il bucket test
+""2017-10-31 11:41:36 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.service.TestService - OK
 "
