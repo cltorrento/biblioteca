@@ -1,6 +1,8 @@
 package it.f2informatica.couchbase.biblioteca.domain;
 
-public class Libro {
+import java.io.Serializable;
+
+public class Libro implements Serializable{
 
 	private String titolo;
 	private String autore;
@@ -10,13 +12,15 @@ public class Libro {
 	private String genere;
 	private double prezzo;
 	private int pagine;
-
-	private Libro() {
+	private String type;
+	private String copertina; 
+	
+	public Libro() {
 		
 	}
 	
 	public Libro(String titolo, String autore, String isbn, String anno, String editore, String genere, double prezzo,
-			int pagine) {
+			int pagine, String type, String copertina) {
 		super();
 		this.titolo = titolo;
 		this.autore = autore;
@@ -26,6 +30,8 @@ public class Libro {
 		this.genere = genere;
 		this.prezzo = prezzo;
 		this.pagine = pagine;
+		this.type = type;
+		this.copertina = copertina;
 	}
 
 	public String getTitolo() {
@@ -92,11 +98,28 @@ public class Libro {
 		this.pagine = pagine;
 	}
 
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String tipo) {
+		this.type = type;
+	}
+	
+	
+	public void setCopertina(String immagine) {
+		this.copertina = immagine;
+	}
+
+	public String getCopertina() {
+		return copertina;
+	}
+
 	@Override
 	public String toString() {
-		return "{\"titolo\":\"" + titolo + "\",\"autore\":\"" + autore + "\",\"isbn\":\"" + isbn + "\",\"anno\":\""
-				+ anno + "\",\"editore\":\"" + editore + "\",\"genere\":\"" + genere + "\",\"prezzo\":\"" + prezzo
-				+ "\",\"pagine\":\"" + pagine + "\"}";
+		return "Libro [titolo=" + titolo + ", autore=" + autore + ", isbn=" + isbn + ", anno=" + anno + ", editore="
+				+ editore + ", genere=" + genere + ", prezzo=" + prezzo + ", pagine=" + pagine + ", type=" + type
+				+ ", copertina=" + copertina + "]";
 	}
 
 }

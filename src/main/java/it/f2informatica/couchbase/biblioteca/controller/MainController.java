@@ -1,5 +1,7 @@
 package it.f2informatica.couchbase.biblioteca.controller;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -28,6 +30,18 @@ public class MainController {
 
 	}
 
+	
+	// -------------------Ricerco tutti i libri ---------------------------------------------
+
+		@RequestMapping(value = "/libri/", method = RequestMethod.GET)
+		public ResponseEntity<List<Libro>> listAllUsers() {
+			List<Libro> libri = LibriService.findAllBooks();
+			if (libri.isEmpty()) {
+				return new ResponseEntity<List<Libro>>(HttpStatus.NO_CONTENT);
+				// You many decide to return HttpStatus.NOT_FOUND
+			}
+			return new ResponseEntity<List<Libro>>(libri, HttpStatus.OK);
+		}
 	// inserire un singolo libro
 	@RequestMapping(method = RequestMethod.POST, value = "/insertlibro", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Boolean> insertLibro(@RequestBody Libro libro) {

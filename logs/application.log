@@ -322,4 +322,40 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 ""2017-10-31 11:41:36 [http-nio-9000-exec-1] WARN  c.c.client.core.env.CoreEnvironment - More than 1 Couchbase Environments found (3), this can have severe impact on performance and stability. Reuse environments!
 ""2017-10-31 11:41:36 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.database.DBManager - Apro il bucket test
 ""2017-10-31 11:41:36 [http-nio-9000-exec-1] DEBUG i.f.c.biblioteca.service.TestService - OK
+""2017-11-07 03:06:18 [main] INFO  i.f.c.b.BibliotecaApplicationTests - Starting BibliotecaApplicationTests on debian with PID 5175 (started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-11-07 03:06:18 [main] DEBUG i.f.c.b.BibliotecaApplicationTests - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-11-07 03:06:18 [main] INFO  i.f.c.b.BibliotecaApplicationTests - No active profile set, falling back to default profiles: default
+""2017-11-07 03:06:23 [main] INFO  i.f.c.b.BibliotecaApplicationTests - Started BibliotecaApplicationTests in 6.171 seconds (JVM running for 8.276)
+""2017-11-07 03:06:29 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Starting BibliotecaApplication on debian with PID 5192 (/home/tuxito/eclipse-workspace/biblioteca/target/classes started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-11-07 03:06:29 [restartedMain] DEBUG i.f.c.b.BibliotecaApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-11-07 03:06:29 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - No active profile set, falling back to default profiles: default
+""2017-11-07 03:06:45 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Started BibliotecaApplication in 16.575 seconds (JVM running for 17.264)
+""2017-11-07 03:11:00 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Starting BibliotecaApplication on debian with PID 5192 (/home/tuxito/eclipse-workspace/biblioteca/target/classes started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-11-07 03:11:00 [restartedMain] DEBUG i.f.c.b.BibliotecaApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-11-07 03:11:00 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - No active profile set, falling back to default profiles: default
+""2017-11-07 03:11:02 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Started BibliotecaApplication in 2.175 seconds (JVM running for 274.237)
+""2017-11-07 03:12:11 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Starting BibliotecaApplication on debian with PID 5192 (/home/tuxito/eclipse-workspace/biblioteca/target/classes started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-11-07 03:12:11 [restartedMain] DEBUG i.f.c.b.BibliotecaApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-11-07 03:12:11 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - No active profile set, falling back to default profiles: default
+""2017-11-07 03:12:13 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Started BibliotecaApplication in 1.358 seconds (JVM running for 345.42)
+""2017-11-07 03:24:19 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Starting BibliotecaApplication on debian with PID 5192 (/home/tuxito/eclipse-workspace/biblioteca/target/classes started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-11-07 03:24:20 [restartedMain] DEBUG i.f.c.b.BibliotecaApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-11-07 03:24:20 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - No active profile set, falling back to default profiles: default
+""2017-11-07 03:24:22 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Started BibliotecaApplication in 2.372 seconds (JVM running for 1074.315)
+""2017-11-07 03:44:20 [main] INFO  i.f.c.b.BibliotecaApplicationTests - Starting BibliotecaApplicationTests on debian with PID 7811 (started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-11-07 03:44:20 [main] DEBUG i.f.c.b.BibliotecaApplicationTests - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-11-07 03:44:20 [main] INFO  i.f.c.b.BibliotecaApplicationTests - No active profile set, falling back to default profiles: default
+""2017-11-07 03:44:24 [main] INFO  i.f.c.b.BibliotecaApplicationTests - Started BibliotecaApplicationTests in 5.022 seconds (JVM running for 6.861)
+""2017-11-07 03:44:31 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Starting BibliotecaApplication on debian with PID 7846 (/home/tuxito/eclipse-workspace/biblioteca/target/classes started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-11-07 03:44:31 [restartedMain] DEBUG i.f.c.b.BibliotecaApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-11-07 03:44:31 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - No active profile set, falling back to default profiles: default
+""2017-11-07 03:44:38 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Started BibliotecaApplication in 7.332 seconds (JVM running for 8.421)
+""2017-11-07 04:14:45 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Starting BibliotecaApplication on debian with PID 7846 (/home/tuxito/eclipse-workspace/biblioteca/target/classes started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-11-07 04:14:45 [restartedMain] DEBUG i.f.c.b.BibliotecaApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-11-07 04:14:45 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - No active profile set, falling back to default profiles: default
+""2017-11-07 04:14:46 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Started BibliotecaApplication in 1.429 seconds (JVM running for 1816.647)
+""2017-11-07 04:14:54 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Starting BibliotecaApplication on debian with PID 7846 (/home/tuxito/eclipse-workspace/biblioteca/target/classes started by tuxito in /home/tuxito/eclipse-workspace/biblioteca)
+""2017-11-07 04:14:54 [restartedMain] DEBUG i.f.c.b.BibliotecaApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-11-07 04:14:54 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - No active profile set, falling back to default profiles: default
+""2017-11-07 04:14:56 [restartedMain] INFO  i.f.c.b.BibliotecaApplication - Started BibliotecaApplication in 1.392 seconds (JVM running for 1826.385)
 "
