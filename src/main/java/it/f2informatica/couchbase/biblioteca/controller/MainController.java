@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import it.f2informatica.couchbase.biblioteca.domain.Libro;
@@ -30,24 +31,26 @@ public class MainController {
 
 	}
 
-	
-	// -------------------Ricerco tutti i libri ---------------------------------------------
+	// ------------------- Ricerco tutti i libri
+	// ---------------------------------------------
 
-		@RequestMapping(value = "/libri/", method = RequestMethod.GET)
-		public ResponseEntity<List<Libro>> listAllUsers() {
-			List<Libro> libri = LibriService.findAllBooks();
-			if (libri.isEmpty()) {
-				return new ResponseEntity<List<Libro>>(HttpStatus.NO_CONTENT);
-				// You many decide to return HttpStatus.NOT_FOUND
-			}
-			return new ResponseEntity<List<Libro>>(libri, HttpStatus.OK);
+	@RequestMapping(value = "/libri/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<Libro>> listAllBooks() {
+		List<Libro> libri = LibriService.findAllBooks();
+		if (libri.isEmpty()) {
+			return new ResponseEntity<List<Libro>>(HttpStatus.NO_CONTENT);
+
 		}
-	// inserire un singolo libro
-	@RequestMapping(method = RequestMethod.POST, value = "/insertlibro", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Boolean> insertLibro(@RequestBody Libro libro) {
-		logger.debug("Ricevuto l'oggetto: "+libro.toString());
+		return new ResponseEntity<List<Libro>>(libri, HttpStatus.OK);
+	}
 
-		boolean result = LibriService.upsertLibro(libro);
+	// -------------- inserire un singolo libro
+	// ---------------------------------------------
+	@RequestMapping(method = RequestMethod.POST, value = "/insertlibro/", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Boolean> insertLibro(@RequestBody Libro libro) {
+		logger.debug("Ricevuto l'oggetto: " + libro.toString());
+
+		boolean result = LibriService.upsertBook(libro);
 		if (result) {
 			return new ResponseEntity<Boolean>(result, HttpStatus.OK);
 		} else {
@@ -55,4 +58,44 @@ public class MainController {
 		}
 	}
 
+	// ------------------- Ricerco un singolo libro
+	// ---------------------------------------------
+
+	@RequestMapping(value = "/getlibro/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Libro> readLibro(@RequestParam String isbn) {
+		Libro libro = LibriService.findBook(isbn);
+		if (libro == null) {
+			return new ResponseEntity<Libro>(HttpStatus.NO_CONTENT);
+
+		}
+		return new ResponseEntity<Libro>(libro, HttpStatus.OK);
+	}
+
+	// -------------- modificare un singolo libro
+	// ---------------------------------------------
+	@RequestMapping(method = RequestMethod.PUT, value = "/updatelibro/", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Boolean> updateLibro(@RequestBody Libro libro) {
+		logger.debug("Ricevuto l'oggetto: " + libro.toString());
+
+		boolean result = LibriService.upsertBook(libro);
+		if (result) {
+			return new ResponseEntity<Boolean>(result, HttpStatus.OK);
+		} else {
+			return new ResponseEntity<Boolean>(result, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+
+	// -------------- cancellare un singolo libro
+	// ---------------------------------------------
+	@RequestMapping(method = RequestMethod.DELETE, value = "/deletelibro/", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Boolean> deleteLibro(@RequestBody Libro libro) {
+		logger.debug("Ricevuto l'oggetto: " + libro.toString());
+
+		boolean result = LibriService.deleteBook(libro.getIsbn());
+		if (result) {
+			return new ResponseEntity<Boolean>(result, HttpStatus.OK);
+		} else {
+			return new ResponseEntity<Boolean>(result, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
 }

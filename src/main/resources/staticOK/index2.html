@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+	<div ng-app="libApp" ng-controller="BookController">
+		<div class="table-responsive">
+			<table class="table table-hover" border="1px solid">
+				<thead>
+					<tr>
+						<th>TITOLO</th>
+						<th>AUTORE</th>
+						<th>ISBN</th>
+						<th>ANNO</th>
+						<th>EDITORE</th>
+						<th>GENERE</th>
+						<th>PREZZO</th>
+						<th>PAGINE</th>
+						<th>TIPO</th>
+						<th>URL</th>
+					</tr>
+				</thead>
+				<tr ng-repeat="x in books">
+					<td>{{ x.titolo }}</td>
+					<td>{{ x.autore }}</td>
+					<td>{{ x.isbn }}</td>
+					<td>{{ x.anno }}</td>
+					<td>{{ x.editore }}</td>
+					<td>{{ x.genere }}</td>
+					<td>{{ x.prezzo }}</td>
+					<td>{{ x.pagine }}</td>
+					<td>{{ x.type }}</td>
+					<td><img src=" {{ x.copertina }}" /></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<script>
+		var app = angular.module('libApp', []);
+		app.controller('BookController', function($scope, $http) {
+			$http.get("http://localhost:9000/biblioteca/libri/").then(
+					function(response) {
+						$scope.books = response.data;
+					});
+		});
+	</script>
+
+</body>
+</html>
